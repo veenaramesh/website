@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html class="no-js ss-preload" lang="en">
 <head>
 
     <!--- basic page needs
@@ -15,14 +15,8 @@
 
     <!-- CSS
     ================================================== -->
-    <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/main.css">
-
-    <!-- script
-    ================================================== -->
-    <script src="js/modernizr.js"></script>
-    <script src="js/pace.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
 
     <!-- favicons
     ================================================== -->
@@ -35,614 +29,506 @@
 
 <body id="top">
 
+
+    <!-- # preloader
+    ================================================== -->
     <div id="preloader">
-        <div id="loader"></div>
+        <div id="loader">
+        </div>
     </div>
 
-    <!-- site header
-    ================================================== -->
-    <header class="s-header">
 
-        <div class="header-logo">
-            <a class="site-logo" href="index.html">
-                <!-- <img src="images/logo.svg" alt="Homepage"> --> 
-            </a>
+    <!-- # page wrap
+    ================================================== -->
+    <div class="s-pagewrap">
+
+        <div class="circles">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
 
-        <nav class="header-nav-wrap">
-            <ul class="header-main-nav">
-                <li class="current"><a class="smoothscroll" href="#intro" title="intro">Intro</a></li>
-                <li><a class="smoothscroll" href="#about" title="about">About</a></li>
-                <li><a class="smoothscroll" href="#services" title="services">Services</a></li>
-                <li><a class="smoothscroll" href="#works" title="works">Works</a></li>
-                <li><a class="smoothscroll" href="#contact" title="contact us">Say Hello</a></li>	
-            </ul>
 
-            <ul class="header-social">
-                <!--
-                <li><a href="#0"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                <li><a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                <li><a href="#0"><i class="fab fa-dribbble" aria-hidden="true"></i></a></li>
-                <li><a href="#0"><i class="fab fa-behance" aria-hidden="true"></i></a></li>
-                --> 
-            </ul>
-        </nav>
+        <!-- ## site header 
+        ================================================== -->
+        <header class="s-header">
 
-        <a class="header-menu-toggle" href="#"><span>Menu</span></a>
-
-    </header> <!-- end s-header -->
-
-
-    <!-- intro
-    ================================================== -->
-    <section id="intro" class="s-intro target-section">
-
-        <div class="row intro-content">
-
-            <div class="column large-9 mob-full intro-text">
-                <h3>Hello! I am Veena.</h3>
-                <h1>
-                    a 22-year old computer scientist<br>
-                    
-                </h1>
+            <div class="header-mobile">
+                <span class="mobile-home-link"><a href="index.html">Luther.</a></span>
+                <a class="mobile-menu-toggle" href="#0"><span>Menu</span></a>
             </div>
 
-            <div class="intro-scroll">
-                <a href="#about" class="intro-scroll-link smoothscroll">
-                    Scroll For More
+            <div class="row wide main-nav-wrap">
+                <nav class="column lg-12 main-nav">
+                    <ul>
+                        <li><a href="index.html" class="home-link">Luther.</a></li>
+                        <li class="current"><a href="#intro" class="smoothscroll">Intro</a></li>
+                        <li><a href="#about" class="smoothscroll">About</a></li>
+                        <li><a href="#works" class="smoothscroll">Works</a></li>
+                        <li><a href="#contact" class="smoothscroll">Say Hello</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </header> <!-- end s-header -->
+
+
+        <!-- ## main content
+        ==================================================- -->
+        <main class="s-content">
+
+
+            <!-- ### intro
+            ================================================== -->
+            <section id="intro" class="s-intro target-section">
+
+                <div class="row intro-content wide">
+
+                    <div class="column">
+                        <div class="text-pretitle with-line">
+                            Hello World
+                        </div>
+
+                        <h1 class="text-huge-title">
+                            I am Veena, <br>
+                            I like words and data. <br>
+                            based in Washington D.C.
+                        </h1>
+                    </div>
+
+
+                </div> <!-- end intro content -->
+
+                <a href="#about" class="intro-scrolldown smoothscroll">
+                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z"/></svg>
                 </a>
-            </div>
 
-            <div class="intro-grid"></div>
-            <div class="intro-pic"></div>
-
-        </div> <!-- end row -->
-
-    </section> <!-- end intro -->
+            </section> <!-- end s-intro -->
 
 
-    <!-- about
-    ================================================== -->
-    <section id="about" class="s-about target-section">
+            <!-- ### about
+            ================================================== -->
+            <section id="about" class="s-about target-section">
 
-        <div class="about-me">
 
-            <div class="row heading-block" data-aos="fade-up">
-                <div class="column large-full">
-                    <h2 class="section-heading">About Me</h2>
-                </div>
-            </div>
+                <div class="row about-info wide" data-animate-block>
 
-            <div class="row about-me__content" data-aos="fade-up">
-                <div class="column large-full about-me__text">
-                    <p class="lead">
-                    Hello! My name is Veena Ramesh. I am a 22-year old student at the University of
-                        Virginia, studying Computer Science and Cognitive Science, with a 
-                        concentration in Linguistics. Currently, I am looking for opportunities
-                        after June 2021. 
-                    </p>
-                    
-                    <p>
-                        Ever since I was little, I was interested in a seemingly unrelated group of things: 
-                        philosophy, writing, psychology + neuroscience, languages, etc. I loved reading. 
-                        I was fascinated by the worlds and languages in these fantasy books, the psyche of each character, 
-                        and the moral underpinnings of each journey. And finally, at University, through my major, I have
-                        the ability to understand each of these topics through the lens of technology. Throughout these last four years, 
-                        I have attempted to do just that: understand the world through technology and use technology to help the world around me. 
-                    </p>
-                    <p>
-                    </p> 
-                    <p>
-                        Linguistics and languages are of particular significance to me. I personally speak three languages: English, Tamil, and Russian. 
-                        Growing up, the importance of learning new languages to understand people, not just in a literal sense, was instilled 
-                        in me. Tamil, my mother tongue, is the oldest spoken language currently, and being fluent in it has not only allowed
-                        me to remain connected to my culture but it also has opened new doors and perspectives. I hope to use these perspectives in 
-                        the world of Natural Language Processing and Information Retrieval. 
-                    </p>
-                    <p>
-                        Currently, I am reading <i>No Longer Human</i> by Dazai Osamu and <i>The Water Dancer</i> by Ta-Nehisi Coates. However, I am
-                        a huge fan of high sci-fi + fantasy novels. I love it when there is a map in the first few pages of a book.
-                        One of my favorite book series of all time is the Kingkiller Chronicles (although, I fear
-                        that the third book will never be released). I also really love Isaac Asimov. My favorite
-                        television show is Over the Garden Wall (a tv mini-series), which is this really beautifully animated cartoon with a fantastic soundtrack,
-                        and my favorite movie is probably Interstellar, which also has a really fantastic soundtrack. Please feel free to contact me!
-                    </p>
-                </div>
-            </div>
-    
-            <div class="row about-me__buttons">
-                <div class="column large-half tab-full" data-aos="fade-up">
-                    <a href="mailto:veenaramesh@protonmail.com" class="btn btn--stroke full-width">Contact Me</a>
-                </div> 
-                <!--
-                <div class="column large-half tab-full" data-aos="fade-up">
-                    <a href="#0" class="btn btn--primary full-width">Download CV</a>
-                </div>
-                --> 
-            </div>
-
-        </div> <!-- end about-me -->
-
-        <div class="about-experience">
-
-            <div class="row heading-block" data-aos="fade-up">
-                <div class="column large-full">
-                    <h2 class="section-heading">Work & Education</h2>
-                </div>
-            </div>
-
-            <div class="row about-experience__timeline">
-
-                <div class="column large-half tab-full" data-aos="fade-up">
-                    <div class="timeline">
-
-                        <div class="timeline__icon-wrap">
-                            <span class="timeline__icon timeline__icon--work"></span>
-                        </div>
-
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">June 2019 - Present</p>
-                                <h3 class="item-title">Itek Infomatic</h3>
-                                <h5>Data Engineer, Data Scientist</h5>
-                            </div>
-                            <div class="timeline__desc">
-                                <p> 
-                                    I created a SQL database architecture, improving upon the previous SPSS codes by increasing
-                                    the computational efficiency of the system. I also used a Machine Learning model to impute missing
-                                    data with a model testing accuracy of 84%. 
-                                </p> 
-                            </div>
-                        </div>
-
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">June 2019 - August 2019</p>
-                                <h3 class="item-title">Red Oak Strategic</h3>
-                                <h5>Data Science Intern</h5>
-                            </div>
-                            <div class="timeline__desc">
-                                <p> 
-                                    I designed a time-series model that analyzed weather forecast trends in Southern California
-                                    to predict the likelihood of wildfires in the region. I additionally consulted with several clients
-                                    and provided compiled R-markdown and R-shiny file reports to help visualize and summarize the model
-                                    output. 
-                                </p> 
-                            </div>
-                        </div>
-
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">June 2018 - February 2019</p>
-                                <h3 class="item-title">Chimera Securities</h3>
-                                <h5>Data Science Intern</h5>
-                            </div>
-                            <div class="timeline__desc">
-                                <p> 
-                                    I created a data-driven web application that aided traders by providing visualized live updates and benchmarks from 
-                                    SPDR S&P 500 ETF Trust (SPY). These benchmarks based on quantitative reasoning and machine learning techniques
-                                    to support these gut instincts. 
-                                </p> 
-                            </div>
-                        </div>
-
+                    <div class="column lg-6 md-12 about-info__pic-block">
+                        <img src="images/about-photo.jpg" 
+                             srcset="images/about-photo.jpg 1x, images/about-photo@2x.jpg 2x" alt="" class="about-info__pic" data-animate-el>
                     </div>
-                </div>
 
-                <div class="column large-half tab-full" data-aos="fade-up">
-                    <div class="timeline">
+                    <div class="column lg-6 md-12">
+                        <div class="about-info__text" >
 
-                        <div class="timeline__icon-wrap">
-                            <span class="timeline__icon timeline__icon--education"></span>
-                        </div>
-
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">September 2017 - May 2021</p>
-                                <h3 class="item-title">University of Virginia</h3>
-                                <h5>Bachelor Degree</h5>
-                            </div>
-                            <div class="timeline__desc">
-                                <p> 
-                                    Important Coursework: Machine Learning, Artificial Intelligence, Statistical Learning & Graphical Models,
-                                    Natural Language Processing, Information Retrieval, Cybersecurity, Theory of Computation, Linear Algebra,
-                                    Computer Architecture and Organization, Data Structures and Algorithms, Intro to Linguistics, Linguistic 
-                                    Typology, Language and Culture, Psycholinguistics, Speech and Hearing Science
-                                </p> 
-                            </div>
-                        </div>
-
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">September 2018 - Present</p>
-                                <h3 class="item-title">HooHacks</h3>
-                                <h5>Vice President, Marketing, External Relations</h5>
-                            </div>
-                            <div class="timeline__desc">
-                                <p> 
-                                    I was on the HooHacks Exec team for two years, working as the Vice President of External Relations and then
-                                    the Vice President of Marketing. After the COVID-19 pandemic hit the United States in March 2020, we were one of the first
-                                    hackathons to move from being completely in-person to being online. We successfully converted the hackathon within
-                                    one week, with 700 attendees and 11 leading sponsors. We did this again in March 2021, with 1200 attendees and even
-                                    more submitted projects. In 2020-2021, we were named one of the best Hackathons in the Country by Pinnacle. 
-                                </p> 
-                            </div>
-                        </div>
-
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">September 2018 - Present</p>
-                                <h3 class="item-title">Virginia Case Club</h3>
-                                <h5>Vice President, Director of Technology</h5>
-                            </div>
-                            <div class="timeline__desc">
-                                <p> 
-                                   After successfully winning and placing at multiple Case Competitions in 2019 and 2020, I began supporting other
-                                    students in case competitions through my position in Virginia Case Club. Not only did we support career development
-                                    within the club, but we also provided education tailored to the world of consulting. I brought my technological and data
-                                    analytics perspective. We also hosted an annual, internal case competition, to help students build their skills.  
-                                </p> 
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-        </div> <!-- end about-experience -->
-
-    </section> <!-- end s-about -->
-
-
-    <!-- services
-    ================================================== -->
-    <section id="services" class="s-services ss-dark target-section">
-
-        <div class="shadow-overlay"></div>
-
-        <div class="row heading-block heading-block--center" data-aos="fade-up">
-            <div class="column large-full">
-                <h2 class="section-heading section-heading--centerbottom">Capabilities</h2>
-
-                <p class="section-desc">
-                    I want to use technology to make the world a better place. 
-                </p>
-            </div>
-        </div> <!-- end heading-block -->
-
-        <div class="row services-list block-large-1-3 block-medium-1-2 block-tab-full">
-
-            <div class="column item-service" data-aos="fade-up">
-                <div class="item-service__content">
-                    <h4 class="item-title">Data Science</h4>
-                    <p>
-                    From my more formal internships to my own personal projets, I have gained significant experience using
-                    and understanding data. My experience stems from my interdisciplinary knowledge of several topics, including
-                    neuroscience, psychology, and language. 
-                    </p>
-                </div>
-            </div>
-
-            <div class="column item-service" data-aos="fade-up">
-                <div class="item-service__content">
-                    <h4 class="item-title">Deep Learning</h4>
-                    <p>
-                    I have also explored quite deeply (ha) into the world of deep learning. I finished the deeplearning.ai's certification
-                        in Deep Learning two years ago with perfect grades. And ever since, I have continued to use this knowledge in my own
-                        personal projects. Most recently, I have predicted the third book in the Kingkiller Chronicles using text from the first
-                        two books. 
-                    </p>
-                </div>
-            </div>
-
-            <div class="column item-service" data-aos="fade-up">
-                <div class="item-service__content">
-                    <h4 class="item-title">Natural Language and Linguistics</h4>
-                    <p>
-                        I have a strong interest in the intersection between computer science and language, probably best
-                        displayed by my formal education in both at the University of Virginia. My personal projects, recently, 
-                        show both my proficiency and interest in the subject. Currently, I am analyzing the language used by celebrities
-                        concerning political and social topics. I also have the deeplearning.ai's certification in Natural Language
-                        Processing. I am fluent in both Russian and Tamil.
-                    </p>
-                </div>
-            </div>
-
-            <div class="column item-service" data-aos="fade-up">
-                <div class="item-service__content">
-                    <h4 class="item-title">Writing and Communication</h4>
-                    <p>
-                        Throughout my time at UVA, I have focused significantly on my ability to write and communicate
-                        my projects in a concise manner. I have worked with the News Staff at the Cavalier Daily at UVA, and
-                        I created the Hoohacks newsletter and Medium blog, which now has more than 2.5k subscribers. I also
-                        write and post on Medium about a variety of topics. 
-                    </p>
-                </div>
-            </div>
-
-            <div class="column item-service" data-aos="fade-up">
-                <div class="item-service__content">
-                    <h4 class="item-title">Art and Design</h4>
-                    <p>
-                        As the Vice President of Hoohacks, I designed the Hoohacks advertising and marketing
-                        materials, which we later used for the website, the t-shirt, and Social Media advertisements.
-                        I used both Adobe Photoshop and Adobe InDesign significantly in these advertising materials and other
-                        projects as well outside of Hoohacks. I also enjoy oil painting. 
-                    </p>
-                </div>
-            </div>
-
-        </div> <!-- end services-list -->
-
-    </section> <!-- end s-services -->
-
-
-    <!-- CTA
-    ================================================== -->
-    <section class="s-cta ss-dark">
-
-        <div class="row heading-block heading-block--center" data-aos="fade-up">
-            <div class="column large-full">
-                <h2 class="section-desc">
-                    Check out my Medium blog!
-                </h2>
-            </div>
-        </div> <!-- end heading-block -->
-
-        <div class="row cta-content" data-aos="fade-up">
-            <div class="column large-full">
-                <p>
-                </p>
-
-                <a href="https://www.medium.com/@veenarameshh" class="btn full-width">Medium Blog</a>
-            </div>
-        </div> <!-- end ad-content -->
-
-    </section> <!-- end s-cta -->
-
-
-    <!-- works
-    ================================================== -->
-    <section id="works" class="s-works target-section">
-
-        <div class="row heading-block heading-block--center" data-aos="fade-up">
-            <div class="column large-full">
-                <h2 class="section-heading section-heading--centerbottom">Selected Works</h2>
-                <p class="section-desc">
-                    Here are some things that I have worked on. 
-                </p>
-            </div>
-        </div> <!-- end heading-block -->
-
-        <div class="masonry-wrap">
-
-            <div class="masonry">
-                <div class="grid-sizer"></div>
-    
-                <div class="masonry__brick" data-aos="fade-up">
-                    <div class="item-folio">
-                        <div class="item-folio__thumb">
-                            <a href="https://github.com/veenaramesh/doors_of_stone/" class="item-folio__project-link" title="Project link" target="_blank"></a>
-                        </div>
-    
-                        <div class="item-folio__text">
-                            <h4 class="item-folio__title">
-                                Predicting Doors of Stone
-                            </h4>
-                            <p class="item-folio__cat">
-                                NLP, tensorFlow
+                            <h2 class="text-pretitle with-line" data-animate-el>
+                                About
+                            </h2>
+                            <p class="attention-getter" data-animate-el>
+                                Hello! My name is Veena Ramesh. I am a 22-year old student at the University of
+                                Virginia, studying Computer Science and Cognitive Science, with a 
+                                concentration in Linguistics. 
+                                <br> <br> 
+                                Ever since I was little, I was interested in a seemingly unrelated group of things: 
+                                philosophy, writing, psychology + neuroscience, languages, etc. And finally, at University, through my major, I have
+                                the ability to understand each of these topics through the lens of technology. Throughout these last four years, 
+                                I have attempted to do just that: understand the world through technology and use technology to help the world around me. 
+                                <br> <br> 
+                                Please feel free to contact me!
                             </p>
-                        </div>
-    
-                    </div>
-                </div> <!-- end masonry__brick -->
-    
-                <div class="masonry__brick" data-aos="fade-up">
-                    <div class="item-folio">
-                        <div class="item-folio__thumb">
-                            <a href="https://github.com/veenaramesh/charlottesville_housing" class="item-folio__project-link" title="Project link" target="_blank"></a>
-                        </div>
-                        <div class="item-folio__text">
-                            <h4 class="item-folio__title">
-                                Visualizing Charlottesville Housing data
-                            </h4>
-                            <p class="item-folio__cat">
-                                visualization
-                            </p>
-                        </div>
 
-                    </div>
-                </div> <!-- end masonry__brick -->
-
-                <div class="masonry__brick" data-aos="fade-up">
-                    <div class="item-folio">
-                            
-                        <div class="item-folio__thumb">
-                            <a href="https://github.com/veenaramesh/music_genres/" class="item-folio__project-link" title="Project link" target="_blank"></a>
-                        </div>
-                        <div class="item-folio__text">
-                            <h4 class="item-folio__title">
-                                Understanding Spotify Genres and Lyrics analysis
-                            </h4>
-                            <p class="item-folio__cat">
-                                NLP, visualization
-                            </p>
                         </div>
                     </div>
-                </div> <!-- end masonry__brick -->
+                </div> <!-- about-info -->
 
 
+                <div class="row about-expertise" data-animate-block>
+                    <div class="column lg-12">
 
+                        <h2 class="text-pretitle" data-animate-el>Expertise</h2>
 
+                        <ul class="skills-list h1" data-animate-el>
+                            <li>Data Science</li>
+                            <li>Deep Learning</li>
+                            <li>Natural Language + Linguistics</li>
+                            <li>Writing + Communication</li>
+                            <li>Art + Design</li>
+                        </ul>
 
-            </div> <!-- end masonry -->
-
-        </div> <!-- end masonry-wrap -->
-
-    </section> <!-- end s-work -->
-
-
-    <!-- testimonies
-    ================================================== 
-    <section class="s-testimonials">
-    
-        <div class="row testimonials" data-aos="fade-up">
-
-            <div class="column large-full testimonials__slider">
-    -->
-                <!-- 
-                <div class="testimonials__slide">
-                    <p>Molestiae incidunt consequatur quis ipsa autem nam sit enim magni. Voluptas tempore rem. 
-                    Explicabo a quaerat sint autem dolore ducimus ut consequatur neque.  Nisi dolores quaerat fuga rem nihil nostrum.
-                    Laudantium quia consequatur molestias delectus culpa.</p>
-                    <div class="testimonials__info">
-                        <img src="images/avatars/user-02.jpg" alt="Author image" class="testimonials__avatar">
-                        <cite class="testimonials__cite">
-                            <strong>Tim Cook</strong>
-                            <span>CEO, Apple</span>
-                        </cite>
                     </div>
-                </div> end testimonials__slide -->
-                
-                <!--
-                <div class="testimonials__slide">
-                    <p>Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci.
-                    Nisi eaque consequatur. Voluptatem dignissimos ut ducimus accusantium perspiciatis.
-                        Quasi voluptas eius distinctio. Atque eos maxime.</p>
-                    <div class="testimonials__info">
-                        <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonials__avatar">
-                        <cite class="testimonials__cite">
-                            <strong>Sundar Pichai</strong>
-                            <span>CEO, Google</span>
-                        </cite>
-                    </div>
-                </div>  end testimonials__slide -->
-                
-                <!--
-                <div class="testimonials__slide">
-                    <p>Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.  
-                    Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.
-                    Voluptatem dignissimos ut.</p>
-                    <div class="testimonials__info">
-                        <img src="images/avatars/user-04.jpg" alt="Author image" class="testimonials__avatar">
-                        <cite class="testimonials__cite">
-                            <strong>Satya Nadella</strong>
-                            <span>CEO, Microsoft</span>
-                        </cite>
-                    </div>
-                </div>  end testimonials__slide -->
-                
-            <!-- </div> end testimonials__slider -->
-
-        <!--  </div> end testimonials -->
-
-    <!-- </section> end s-testimonials -->
+                </div> <!-- end about-expertise -->
 
 
-    <!-- contact
-    ================================================== -->
-    <section id="contact" class="s-contact ss-dark target-section">
+                <div class="row about-timelines" data-animate-block>
 
-        <div class="row heading-block" data-aos="fade-up">
-            <div class="column large-full">
-                <h2 class="section-heading">Get In Touch</h2>
-            </div>
-        </div>
+                    <div class="column lg-6 tab-12">
 
-        <div class="row contact-main" data-aos="fade-up">
-            <div class="column large-full">
-                <p class="contact-email">
-                    <a href="mailto:veenaramesh@protonmail.com">veenaramesh@protonmail.com</a>
-                </p>
+                        <h2 class="text-pretitle" data-animate-el>
+                            Experience
+                        </h2>
 
-                <p class="section-desc">
-                Feel free to email me (or contact me otherwise). 
-                </p>
-            </div>
-        </div>
+                        <div class="timeline" data-animate-el>
 
-        <div class="row contact-infos" data-aos="fade-up" data-aos-anchor=".contact-main">
-
-            <div class="column large-5 medium-full contact-phone">
-                <h4>Call Me</h4>
-                <a href="tel:703-626-3378">+703 626 3378</a>
-                <h4>Email Me</h4>
-                <a href="mailto:veenaramesh@protonmail.com">protonmail</a>
-                <h4>Connect with Me</h4>
-                <a href="https://www.linkedin.com/in/veenarameshh">linkedin</a>
-            </div>
-
-        </div> <!-- end contact-infos -->
-
-    </section> <!-- end s-contact -->
-
-
-    <!-- footer
-    ================================================== -->
-    <footer>
-        <div class="row">
-            <div class="column large-full ss-copyright">
-                <span>© Copyright Veena Ramesh 2021</span> 
-                <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
-            </div>            
-
-            <div class="ss-go-top">
-                <a class="smoothscroll" title="Back to Top" href="#top"></a>
-            </div>
-        </div>
-    </footer>
-
-
-    <!-- photoswipe background
-    ================================================== -->
-    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
-
-        <div class="pswp__bg"></div>
-        <div class="pswp__scroll-wrap">
-
-            <div class="pswp__container">
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-            </div>
-
-            <div class="pswp__ui pswp__ui--hidden">
-                <div class="pswp__top-bar">
-                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
-                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
-                    "Zoom in/out"></button>
-                    <div class="pswp__preloader">
-                        <div class="pswp__preloader__icn">
-                            <div class="pswp__preloader__cut">
-                                <div class="pswp__preloader__donut"></div>
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">Itek Infomatic</h3>
+                                    <h5 class="timeline__meta">Data Engineer, Data Scientist</h5>
+                                    <p class="timeline__timeframe">June 2019 - Present</p>
+                                </div>
+                                <div class="timeline__desc">
+                                    <p> 
+                                        I created a SQL database architecture, improving upon the previous SPSS codes by increasing
+                                        the computational efficiency of the system. I also used a Machine Learning model to impute missing
+                                        data with a model testing accuracy of 84%. 
+                                    </p> 
+                                </div>
                             </div>
+    
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">Red Oak Strategic</h4>
+                                    <h5 class="timeline__meta">Data Science Intern</h5>
+                                    <p class="timeline__timeframe">June 2019 - August 2019</p>
+                                </div>
+                                <div class="timeline__desc">
+                                    <p> 
+                                        I designed a time-series model that analyzed weather forecast trends in Southern California
+                                        to predict the likelihood of wildfires in the region. I additionally consulted with several clients
+                                        and provided compiled R-markdown and R-shiny file reports to help visualize and summarize the model
+                                        output. 
+                                    </p>                                 
+                                </div>
+                            </div>
+    
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">Chimera Securities</h4>
+                                    <h5 class="timeline__meta">Data Science Intern</h5>
+                                    <p class="timeline__timeframe">June 2018 - February 2019</p>
+                                </div>
+                                <div class="timeline__desc">
+                                    <p> 
+                                        I created a data-driven web application that aided traders by providing visualized live updates and benchmarks from 
+                                        SPDR S&P 500 ETF Trust (SPY). These benchmarks based on quantitative reasoning and machine learning techniques
+                                        to support these gut instincts. 
+                                    </p>                                 
+                                </div>
+                            </div>
+                        </div> <!-- end timeline -->
+
+                    </div> <!-- end column -->
+
+                    <div class="column lg-6 tab-12">
+
+                        <h2 class="text-pretitle" data-animate-el>
+                            Education
+                        </h2>
+
+                        <div class="timeline" data-animate-el>
+
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">University of Virginia</h3>
+                                    <h5 class="timeline__meta">B.A. in Computer Science, Cognitive Science</h5>
+                                    <p class="timeline__timeframe">May 2021</p>
+                                </div>
+                                <div class="timeline__desc">
+                                    <p> 
+                                        Important Coursework: Machine Learning, Artificial Intelligence, Statistical Learning & Graphical Models,
+                                        Natural Language Processing, Information Retrieval, Cybersecurity, Theory of Computation, Linear Algebra,
+                                        Computer Architecture and Organization, Data Structures and Algorithms, Intro to Linguistics, Linguistic 
+                                        Typology, Language and Culture, Psycholinguistics, Speech and Hearing Science
+                                    </p>
+                                </div>
+                            </div>
+    
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">HooHacks</h4>
+                                    <h5 class="timeline__meta">Vice President, Marketing, External Relations</h5>
+                                    <p class="timeline__timeframe">September 2018 - Present</p>
+                                </div>
+                                <div class="timeline__desc">
+                                    <p> 
+                                        I was on the HooHacks Exec team for two years, working as the Vice President of External Relations and then
+                                        the Vice President of Marketing. After the COVID-19 pandemic hit the United States in March 2020, we were one of the first
+                                        hackathons to move from being completely in-person to being online. We successfully converted the hackathon within
+                                        one week, with 700 attendees and 11 leading sponsors. We did this again in March 2021, with 1200 attendees and even
+                                        more submitted projects. In 2020-2021, we were named one of the best Hackathons in the Country by Pinnacle. 
+                                    </p>                                 
+                                </div>
+                            </div>
+
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">Virginia Case Club</h4>
+                                    <h5 class="timeline__meta">Vice President, Director of Technology</h5>
+                                    <p class="timeline__timeframe">September 2018 - Present</p>
+                                </div>
+                                <div class="timeline__desc">
+                                    <p> 
+                                        After successfully winning and placing at multiple Case Competitions in 2019 and 2020, I began supporting other
+                                         students in case competitions through my position in Virginia Case Club. Not only did we support career development
+                                         within the club, but we also provided education tailored to the world of consulting. I brought my technological and data
+                                         analytics perspective. We also hosted an annual, internal case competition, to help students build their skills.  
+                                     </p>                                
+                                </div>
+                            </div>
+    
+                        </div> <!-- end timeline -->
+                        
+                    </div> <!-- end column -->
+
+
+                </div> <!-- end about-timelines -->
+
+            </section> <!-- end s-about -->
+
+
+            <!-- ### works
+            ================================================== -->
+            <section id="works" class="s-works target-section">
+
+
+                <div class="row works-portfolio">
+
+                    <div class="column lg-12" data-animate-block>
+
+                        <h2 class="text-pretitle" data-animate-el>
+                            Recent Works
+                        </h2>
+                        <p class="h1" data-animate-el>
+                            Here are some of my favorite projects I have done lately. Feel free to check them out.
+                        </p>
+    
+                        <ul class="folio-list row block-lg-one-half block-stack-on-1000">
+
+                            <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="#modal-01">
+                                    
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            web application
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            arXiv search engine.
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="folio-list__proj-link" href="https://github.com/veenaramesh/arxiv-search" title="project link">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                                </a>
+                            </li> <!--end folio-list__item -->
+
+                            <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="#modal-02">
+  
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            data science
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            analyzing celebrity language on Twitter 
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="folio-list__proj-link" href="https://github.com/veenaramesh/celebrity-twitter" title="project link">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                                </a>
+                            </li> <!--end folio-list__item -->
+
+                            <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="#modal-03">
+                                    
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            deep learning
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            predicting Doors of Stone
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="folio-list__proj-link" href="#" title="project link">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                                </a>
+                            </li> <!--end folio-list__item -->
+
+                            <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="#modal-04">
+                                    
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            data science
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            classifying genre via song lyrics
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="folio-list__proj-link" href="#" title="project link">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                                </a>
+                            </li> <!--end folio-list__item -->
+
+
+                        </ul> <!-- end folio-list -->
+
+                    </div> <!-- end column -->
+
+
+                    <!-- Modal Templates Popup
+                    -------------------------------------------- -->
+                    <div id="modal-01" hidden>
+                        <div class="modal-popup">
+                
+                            <div class="modal-popup__desc">
+                                <h5>arXiv search engine</h5>
+                                <p>Created an arXiv search engine that parses natural language queries to deliver the best results. The search engine
+                                    was proven to be better than the original arXiv search engine with several different queries.
+                                </p>
+                                <ul class="modal-popup__cat">
+                                    <li>natural language processing</li>
+                                    <li>structural data</li>
+                                </ul>
+                            </div>
+                
+                            <a href="https://github.com/veenaramesh/arxiv-search" class="modal-popup__details">Project link</a>
                         </div>
+                    </div> <!-- end modal -->
+
+                    <div id="modal-02" hidden>
+                        <div class="modal-popup">
+                            <img src="images/portfolio/gallery/g-lamp.jpg" alt="">
+                
+                            <div class="modal-popup__desc">
+                                <h5>analyzing celebrity language on Twitter</h5>
+                                <p>Conducted an intensive analysis on celebrity language on Twitter concerning COVID-19 and found that
+                                    celebrities use different sentiment from average users. (shown to be statistically significant) 
+                                </p>
+                                <ul class="modal-popup__cat">
+                                    <li>natural language processing</li>
+                                    <li>data science</li>
+                                </ul>
+                            </div>
+                
+                            <a href="https://github.com/veenaramesh/celebrity-twitter" class="modal-popup__details">Project link</a>
+                        </div>
+                    </div> <!-- end modal -->
+
+                    <div id="modal-03" hidden>
+                        <div class="modal-popup">
+                            <img src="images/portfolio/gallery/g-rucksack.jpg" alt="">
+                
+                            <div class="modal-popup__desc">
+                                <h5>predicting Doors of Stone</h5>
+                                <p>Predicted the third book of the Kingkiller Chronicles by Patrick Rothfuss using LSTM Neural Networks. </p>
+                                <ul class="modal-popup__cat">
+                                    <li>deep learning</li>
+                                    <li>natural language processing</li>
+                                </ul>
+                            </div>
+                
+                            <a href="https://github.com/veenaramesh/doors_of_stone" class="modal-popup__details">Project link</a>
+                        </div>
+                    </div> <!-- end modal -->
+
+                    <div id="modal-04" hidden>
+                        <div class="modal-popup">
+                            <img src="images/portfolio/gallery/g-skaterboy.jpg" alt="">
+                
+                            <div class="modal-popup__desc">
+                                <h5>classifying genre via song lyrics</h5>
+                                <p>Used a Hierarchical GRU, Bidirectional LSTM, and a simple LSTM to classify music genres using song lyrics. The HGRU achieved an 
+                                    F1 score of ~.73. 
+                                </p>
+                                <ul class="modal-popup__cat">
+                                    <li>data science</li>
+                                    <li>natural language processing</li>
+                                </ul>
+                            </div>
+                
+                            <a href="https://github.com/veenaramesh/cs4501" class="modal-popup__details">Project link</a>
+                        </div>
+                    </div> <!-- end modal -->
+
+
+                </div> <!-- end works-portfolio -->
+
+
+
+            </section> <!-- end s-works -->
+
+
+            <!-- ### contact
+            ================================================== -->
+            <section id="contact" class="s-contact target-section">
+
+                <div class="row contact-top">
+                    <div class="column lg-12">
+                        <h2 class="text-pretitle">
+                            Get In Touch
+                        </h2>
+
+                        <p class="h1">
+                            I would love to hear from you. 
+                        </p>
                     </div>
+                </div> <!-- end contact-top -->
+
+                <div class="row contact-bottom">
+                    <div class="column lg-3 md-5 tab-6 stack-on-550 contact-block">
+                        <h3 class="text-pretitle">Reach me at</h3>
+                        <p class="contact-links">
+                            <a href="mailto:veenaramesh@protonmail.com" class="mailtoui">veenaramesh@protonmail.com</a> <br>
+                        </p>
+                    </div>
+                    <div class="column lg-4 md-5 tab-6 stack-on-550 contact-block">
+                    </div>
+                    <div class="column lg-4 md-12 contact-block">
+                        <a href="mailto:veenaramesh@protonmail.com" class="mailtoui btn btn--medium u-fullwidth contact-btn">Say Hello.</a>
+                    </div>
+                </div> <!-- end contact-bottom -->
+
+            </section> <!-- end contact -->
+
+        </main> <!-- end s-content -->
+
+
+        <!-- ## footer
+        ================================================== -->
+        <footer class="s-footer">
+
+            <div class="row">
+                <div class="column ss-copyright">
+                    <span>© Copyright Veena Ramesh 2021</span> 
+                    <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
                 </div>
-                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                    <div class="pswp__share-tooltip"></div>
-                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
-                "Next (arrow right)"></button>
-                <div class="pswp__caption">
-                    <div class="pswp__caption__center"></div>
+
+                <div class="ss-go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd"><path d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z"/></svg>
+                    </a>
                 </div>
             </div>
 
-        </div>
+        </footer> <!-- end s-footer -->
 
-    </div><!-- end photoSwipe background -->
+    </div> <!-- end -s-pagewrap -->
 
 
     <!-- Java Script
     ================================================== -->
-    <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 
 </body>
+</html>
